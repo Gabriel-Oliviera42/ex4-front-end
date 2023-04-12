@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4</title>
+</head>
+<body>
+    <form>
+        Raio: <input type="text" id="raio"> <br>
+
+        Resultado: <input type="text" id="result"> <br>
+        <input type="button" value="calcular" onclick="calcular()">
+
+    </form>
+    <script>
+        function calcular(){
+            var raio;
+            raio = document.getElementById("raio").value;
+
+            resultado = 4.0/3.0 * 3.14159 * raio * raio * raio;
+            document.getElementById("result").value = resultado.toFixed(2);
+        }
+    </script>
+</body>
+</html>
